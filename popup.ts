@@ -1,4 +1,4 @@
-const headerElement = document.getElementById('affirmHeader');
+const headerElement = document.getElementById('affirmHeader') as HTMLElement | null;
 const affirmations: string[] = [
     "I've got this! I can totally handle whatever comes my way.",
     "My out-of-the-box thinking always sets me apart at work.",
@@ -21,6 +21,8 @@ const affirmations: string[] = [
     "My laid-back style? It's part of what makes me professional.",
     "My youth is my power – bringing that energy and freshness to the grind."
 ];
+
+console.log('This is the header element => ', headerElement)
 
 
 function getRandomValueFromArray(arr: string[]): string | undefined {
