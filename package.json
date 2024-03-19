@@ -1,0 +1,26 @@
+{
+  "name": "affirmationsextension",
+  "version": "1.0.0",
+  "description": "An npm project for a chrome extension",
+  "main": "manifest.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjuarez5/affirmationExtension.git"
+  },
+  "keywords": [
+    "chrome;",
+    "extension;"
+  ],
+  "author": "Julio Juarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jjuarez5/affirmationExtension/issues"
+  },
+  "homepage": "https://github.com/jjuarez5/affirmationExtension#readme",
+  "devDependencies": {
+    "chrome-types": "^0.1.273"
+  }
+}
