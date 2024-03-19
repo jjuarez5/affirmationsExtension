@@ -1,4 +1,4 @@
-const el = document.getElementById('affirmHeader');
+const headerElement = document.getElementById('affirmHeader');
 const affirmations: string[] = [
     "I've got this! I can totally handle whatever comes my way.",
     "My out-of-the-box thinking always sets me apart at work.",
@@ -23,8 +23,6 @@ const affirmations: string[] = [
 ];
 
 
-
-
 function getRandomValueFromArray(arr: string[]): string | undefined {
     if (arr.length === 0) {
         return undefined; // Return undefined if the array is empty
@@ -32,4 +30,7 @@ function getRandomValueFromArray(arr: string[]): string | undefined {
     const randomIndex = Math.floor(Math.random() * arr.length);
     return arr[randomIndex];
 }
-console.log("This is a popup!");
+
+if (headerElement) {
+    headerElement.innerText = getRandomValueFromArray(affirmations) ?? 'Hang in there';
+}
